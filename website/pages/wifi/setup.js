@@ -1,9 +1,53 @@
 import Head from 'next/head'
 import {Input, Button, Heading, Text, Anchor} from 'dracula-ui'
-import cwifi from '../../styles/c-wifi.module.css';
-import lwifi from '../../styles/l-wifi.module.css';
+import cwifi from '../../styles/c-wifi.module.css'
+import lwifi from '../../styles/l-wifi.module.css'
+import {INVENTOR_API_URL} from '../../constants'
+import { useRouter } from 'next/router'
 
 export default function WiFiSetup() {
+  const router = useRouter()
+
+  async function handleSubmit(event) {
+    // Stop the form from submitting and refreshing the page.
+    event.preventDefault()
+
+    // Get data from the form.
+    const data = {
+      ssid: event.target['wifi-name'].value,
+      password: event.target['wifi-password'].value,
+    }
+
+    // Send the data to the server in JSON format.
+    const JSONdata = JSON.stringify(data)
+
+    // API endpoint where we send form data.
+    const endpoint = `${INVENTOR_API_URL}/api/save-wifi`
+
+    // Form the request for sending data to the server.
+    const options = {
+      // The method is POST because we are sending data.
+      method: 'POST',
+      // Tell the server we're sending JSON.
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      // Body of the request is the JSON data we created above.
+      body: JSONdata,
+    }
+
+    try {
+      // TODO: Tell device to save WiFi details
+      const resp = await fetch(endpoint, options);
+      console.log(`Resp => `, resp);
+
+      router.push('/wifi/connecting');
+    } catch (err) {
+      console.error('Failed to save wifi details:', err);
+      router.push('/error');
+    }
+  }
+
   return (
     <div className={["drac-bg-black", "drac-text-white"].join(' ')}>
       <Head>
@@ -21,7 +65,7 @@ export default function WiFiSetup() {
 
           <Text as="p">Please enter in your WiFi details.</Text>
 
-          <form className={cwifi['c-wifi-form']} action="/api/wifi/connect" method="post">
+          <form className={cwifi['c-wifi-form']} onSubmit={handleSubmit}>
             <Input required name="wifi-name" placeholder="WiFi Name" color="green" />
             <Input required name="wifi-password" placeholder="WiFi Password" color="green" type="password" />
             <Button as="input" type="submit" value="Connect to Wifi"/>

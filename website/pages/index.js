@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import {List, Heading, Text, Anchor} from 'dracula-ui'
 import lindex from '../styles/l-index.module.css';
+import {INVENTOR_API_URL} from '../constants';
 
 export default function Home() {
   return (
