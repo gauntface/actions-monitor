@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "next dev website",
+    "build": "next build website",
+    "start": "next start website",
+    "lint": "next lint website"
   },
   "dependencies": {
     "dracula-ui": "^1.0.3",
