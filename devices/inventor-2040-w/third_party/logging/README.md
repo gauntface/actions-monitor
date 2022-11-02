@@ -1,0 +1,1 @@
+From https://github.com/micropython/micropython-lib/tree/900dd1c61b42c709417e303b706b5e5055214740/python-stdlib/logging
