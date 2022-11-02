@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import {Input} from 'dracula-ui'
+import {List, Heading, Text, Anchor} from 'dracula-ui'
+import lindex from '../styles/l-index.module.css';
 
 export default function Home() {
   return (
@@ -10,8 +11,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <Input placeholder="Input" color="white" />;
+      <main className={lindex['l-index']}>
+        <div className={lindex['l-index-wrapper']}>
+          <Heading as="h1" size="xl">📊 GitHub Actions Monitor</Heading>
+
+          <Text as="p">This is a WIP, but here are some links to enjoy.</Text>
+
+          <List variant="unordered" color="purple">
+            <li><Anchor href="/wifi/setup">WiFi Setup</Anchor></li>
+          </List>
+        </div>
       </main>
 
       <footer>

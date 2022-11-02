@@ -1,3 +1,8 @@
+:root {
+  --ps: 12px;
+  --pm: 24px;
+  --pl: 48px;
+}
 html,
 body {
   padding: 0;

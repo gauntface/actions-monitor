@@ -1,0 +1,10 @@
+.l-index {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.l-index-wrapper {
+  padding: var(--pl);
+  max-width: 480px;
+}

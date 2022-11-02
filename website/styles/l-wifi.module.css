@@ -1,0 +1,10 @@
+.l-wifi {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.l-wifi-wrapper {
+  padding: var(--pl);
+  max-width: 480px;
+}
