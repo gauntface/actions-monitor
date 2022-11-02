@@ -21,9 +21,6 @@ export default function WiFiSetup() {
     // Send the data to the server in JSON format.
     const JSONdata = JSON.stringify(data)
 
-    // API endpoint where we send form data.
-    const endpoint = `${INVENTOR_API_URL}/api/save-wifi`
-
     // Form the request for sending data to the server.
     const options = {
       // The method is POST because we are sending data.
@@ -38,7 +35,7 @@ export default function WiFiSetup() {
 
     try {
       // TODO: Tell device to save WiFi details
-      const resp = await fetch(endpoint, options);
+      const resp = await fetch(`${INVENTOR_API_URL}/api/save-wifi`, options);
       console.log(`Resp => `, resp);
 
       router.push('/wifi/connecting');

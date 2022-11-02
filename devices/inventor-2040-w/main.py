@@ -9,8 +9,6 @@ from inventor import Inventor2040W, NUM_LEDS
 # Create a new Inventor2040W
 board = Inventor2040W()
 
-leds.hello(board, NUM_LEDS)
-
 ssid = "GitHub Actions Monitor"
 password = "123456789"
 
@@ -38,6 +36,15 @@ async def index(request, response):
     await response.start_html()
     # Send actual HTML page
     await response.send('<html><body><h1>Hello, world!</h1></body></html>\n')
+    
+    led.toggle()
+
+@app.route('/api/save-wifi')
+async def index(request, response):
+    # Start HTTP response with content-type text/html
+    await response.start_json()
+    # Send actual HTML page
+    await response.send('{}\n')
     
     led.toggle()
 

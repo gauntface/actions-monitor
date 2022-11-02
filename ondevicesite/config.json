@@ -1,0 +1,27 @@
+{
+  "disableHugoGeneratorInject": true,
+  "markup": {
+      "goldmark": {
+        "renderer": {
+            "unsafe": true
+        }
+      },
+      "highlight": {
+        "codeFences": false
+      }
+  },
+
+  "baseURL": "https://monitor.gaunt.dev/",
+  "languageCode": "en-us",
+  "title": "GitHub Actions Monitor",
+  "theme": ["monitor", "base-theme"],
+
+  "params": {
+      "description": "GitHub Actions Monitor."
+  },
+
+  "taxonomies": {
+    "tag": "",
+    "category": ""
+  }
+}
