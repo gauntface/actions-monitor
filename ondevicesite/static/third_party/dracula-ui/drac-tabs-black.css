@@ -1,0 +1,2 @@
+.drac-tabs-black .drac-tab-active:after{background:var(--black);transform:scaleX(1)}
+.drac-tabs-black .drac-tab-active .drac-tab-link{color:var(--black)}

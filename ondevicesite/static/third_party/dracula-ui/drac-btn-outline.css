@@ -1,0 +1,3 @@
+.drac-btn-outline{background-color:transparent;border-style:solid;border-width:var(--border-size)}
+.drac-btn-outline:disabled{background-color:transparent;border-color:var(--disabled);color:var(--disabled)}
+.drac-btn-outline:disabled .drac-text{color:var(--disabled)}

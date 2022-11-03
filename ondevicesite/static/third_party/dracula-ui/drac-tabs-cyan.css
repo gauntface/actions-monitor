@@ -1,0 +1,2 @@
+.drac-tabs-cyan .drac-tab-active:after{background:var(--cyan);transform:scaleX(1)}
+.drac-tabs-cyan .drac-tab-active .drac-tab-link{color:var(--cyan)}

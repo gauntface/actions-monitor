@@ -1,0 +1,21 @@
+.drac-btn,.drac-heading,.drac-input,.drac-select,.drac-text{font-family:Fira Code,monospace}
+.drac-input{-webkit-appearance:textfield;background:var(--blackSecondary);border:.3rem solid transparent;border-radius:var(--rounded-lg);box-sizing:border-box;outline:none;transition:all .3s ease-in-out;width:100%}
+.drac-input:focus{border-color:var(--white)}
+.drac-input::-moz-placeholder{color:var(--blackTernary)}
+.drac-input::placeholder{color:var(--blackTernary)}
+.drac-input-outline.drac-input-black,.drac-input-outline.drac-input-black:focus,.drac-input.drac-input-black:focus{border-color:var(--black)}
+.drac-input-outline.drac-input-blackSecondary,.drac-input-outline.drac-input-blackSecondary:focus,.drac-input.drac-input-blackSecondary:focus{border-color:var(--blackSecondary)}
+.drac-input-outline.drac-input-white,.drac-input-outline.drac-input-white:focus,.drac-input.drac-input-white:focus{border-color:var(--white)}
+.drac-input-outline.drac-input-cyan,.drac-input-outline.drac-input-cyan:focus,.drac-input.drac-input-cyan:focus{border-color:var(--cyan)}
+.drac-input-outline.drac-input-green,.drac-input-outline.drac-input-green:focus,.drac-input.drac-input-green:focus{border-color:var(--green)}
+.drac-input-outline.drac-input-orange,.drac-input-outline.drac-input-orange:focus,.drac-input.drac-input-orange:focus{border-color:var(--orange)}
+.drac-input-outline.drac-input-pink,.drac-input-outline.drac-input-pink:focus,.drac-input.drac-input-pink:focus{border-color:var(--pink)}
+.drac-input-outline.drac-input-purple,.drac-input-outline.drac-input-purple:focus,.drac-input.drac-input-purple:focus{border-color:var(--purple)}
+.drac-input-outline.drac-input-red,.drac-input-outline.drac-input-red:focus,.drac-input.drac-input-red:focus{border-color:var(--red)}
+.drac-input-outline.drac-input-yellow,.drac-input-outline.drac-input-yellow:focus,.drac-input.drac-input-yellow:focus{border-color:var(--yellow)}
+.drac-input.drac-input-sm{font-size:var(--font-sm);height:var(--spacing-8);padding:0 var(--spacing-3)}
+.drac-input{font-size:var(--font-md);height:var(--spacing-10);padding:0 var(--spacing-4)}
+.drac-input.drac-input-lg{font-size:var(--font-lg);height:var(--spacing-12);padding:0 var(--spacing-6)}
+.drac-input.drac-input-border-sm{border-width:.1rem}
+.drac-input.drac-input-border-md{border-width:.2rem}
+.drac-input.drac-input-border-lg{border-width:.3rem}

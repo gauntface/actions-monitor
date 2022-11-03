@@ -1,0 +1,15 @@
+.drac-checkbox,.drac-radio{--active-inner:var(--white);--background:var(--white);--disabled:var(--blackSecondary);--disabled-inner:var(--blackTernary);--local-bg-color:var(--border-hover);-webkit-appearance:none;-moz-appearance:none;appearance:none;border:1px solid var(--local-bg-color,var(--border));cursor:pointer;display:inline-block;height:21px;margin:0;outline:none;position:relative;transition:background .3s,border-color .3s,box-shadow .2s;vertical-align:top}
+.drac-checkbox:after,.drac-radio:after{content:"";display:block;left:0;position:absolute;top:0;transition:transform var(--local-transform-speed,.3s) var(--local-transform-effect,ease),opacity var(--local-opacity-speed,.2s)}
+.drac-checkbox:checked,.drac-radio:checked{--local-bg:var(--active);--local-bg-color:var(--active);--local-opacity-speed:0.3s;--local-transform-speed:0.6s;--local-transform-effect:cubic-bezier(0.2,0.85,0.32,1.2)}
+.drac-checkbox:disabled,.drac-radio:disabled{--local-bg:var(--disabled);cursor:not-allowed;opacity:.9}
+.drac-checkbox:disabled:checked,.drac-radio:disabled:checked{--local-bg:var(--disabled-inner);--local-bg-color:var(--border)}
+.drac-checkbox:disabled+label,.drac-radio:disabled+label{cursor:not-allowed}
+.drac-checkbox:focus,.drac-radio:focus{box-shadow:0 0 0 var(--focus)}
+.drac-checkbox:not(.drac-switch),.drac-radio:not(.drac-switch){width:21px}
+.drac-checkbox:not(.drac-switch):after,.drac-radio:not(.drac-switch):after{opacity:var(--local-opacity,0)}
+.drac-checkbox:not(.drac-switch):checked,.drac-radio:not(.drac-switch):checked{--local-opacity:1}
+.drac-checkbox+label,.drac-radio+label{cursor:pointer;display:inline-block;font-size:14px;line-height:21px;margin-left:4px;vertical-align:top}
+.drac-radio{border-radius:50%}
+.drac-radio:after{background:var(--local-bg-color);border-radius:50%;height:19px;opacity:0;transform:scale(var(--scale));width:19px}
+.drac-radio:disabled:checked:after{background:var(--disabled-inner)}
+.drac-radio:checked{--scale:0.8}

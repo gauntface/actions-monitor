@@ -1,0 +1,5 @@
+.drac-btn,.drac-heading,.drac-input,.drac-select,.drac-text{font-family:Fira Code,monospace}
+.drac-text{font-size:var(--font-md)}
+.drac-text.drac-text-lg{font-size:var(--font-lg)}
+.drac-text.drac-text-sm{font-size:var(--font-sm)}
+.drac-text.drac-text-xs{font-size:var(--font-xs)}

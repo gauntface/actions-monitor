@@ -1,0 +1,13 @@
+.drac-table{border-collapse:collapse;border-color:var(--accentColor);width:100%}
+.drac-table th{font-weight:500;padding-bottom:.2rem;text-align:left;text-transform:uppercase}
+.drac-table td{border-color:var(--disabled);border-style:solid;border-width:.1rem;padding:.5rem}
+.drac-table.drac-table-black td{border-color:var(--black)}
+.drac-table.drac-table-white td{border-color:var(--white)}
+.drac-table.drac-table-cyan td{border-color:var(--cyan)}
+.drac-table.drac-table-green td{border-color:var(--green)}
+.drac-table.drac-table-orange td{border-color:var(--orange)}
+.drac-table.drac-table-pink td{border-color:var(--pink)}
+.drac-table.drac-table-purple td{border-color:var(--purple)}
+.drac-table.drac-table-red td{border-color:var(--red)}
+.drac-table.drac-table-yellow td{border-color:var(--yellow)}
+.drac-table.drac-table-striped tr:nth-child(2n){background-color:var(--whiteLight)}

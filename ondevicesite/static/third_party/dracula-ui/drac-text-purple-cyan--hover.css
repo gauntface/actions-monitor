@@ -1,0 +1,2 @@
+.drac-text-purple-cyan\--hover:hover{background-image:linear-gradient(var(--gradientDegree),var(--purple)0,var(--cyan) 100%)}
+.drac-text-purple-cyan\--hover:hover,.drac-text-yellow-pink\--hover:hover{-webkit-text-fill-color:transparent;-moz-text-fill-color:transparent;background-clip:text;-webkit-background-clip:text;-moz-background-clip:text;background-size:100%}

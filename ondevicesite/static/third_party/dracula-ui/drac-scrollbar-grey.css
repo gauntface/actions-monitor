@@ -1,0 +1,7 @@
+.drac-scrollbar-grey{--drac-scrollbar-bg:transparent;--drac-scrollbar-border:var(--greyLight);--drac-scrollbar-thumb:var(--grey);--drac-scrollbar-thumb-hover:var(--greySecondary);overflow:auto}
+.drac-scrollbar-grey::-webkit-scrollbar{background-color:var(--drac-scrollbar-bg);height:1.4rem;width:1.4rem}
+.drac-scrollbar-grey::-webkit-scrollbar-track:horizontal{border-top:.0625rem solid var(--drac-scrollbar-border)}
+.drac-scrollbar-grey::-webkit-scrollbar-track:vertical{border-left:.0625rem solid var(--drac-scrollbar-border)}
+.drac-scrollbar-grey::-webkit-scrollbar-corner{background-color:transparent;border-left:.0625rem solid var(--drac-scrollbar-border);border-top:.0625rem solid var(--drac-scrollbar-border)}
+.drac-scrollbar-grey::-webkit-scrollbar-thumb{background-clip:content-box;-moz-background-clip:content;-webkit-background-clip:content;background-color:var(--drac-scrollbar-thumb);border:.4rem solid transparent;border-radius:1rem;min-height:3rem;min-width:3rem}
+.drac-scrollbar-grey::-webkit-scrollbar-thumb:hover{background-color:var(--drac-scrollbar-thumb-hover)}

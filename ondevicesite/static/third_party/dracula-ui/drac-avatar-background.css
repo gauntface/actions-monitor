@@ -1,0 +1,2 @@
+.drac-avatar,.drac-avatar-background{border-radius:var(--rounded-full);box-sizing:border-box}
+.drac-avatar-background{background-position:50%;background-repeat:no-repeat;background-size:cover;display:"inline-block";height:100%;width:100%}
