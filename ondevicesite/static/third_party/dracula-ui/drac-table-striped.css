@@ -1,9 +1,0 @@
-.drac-table-striped.drac-table-black tr:nth-child(2n){background-color:var(--blackLight)}
-.drac-table-striped.drac-table-white tr:nth-child(2n){background-color:var(--whiteLight)}
-.drac-table-striped.drac-table-cyan tr:nth-child(2n){background-color:var(--cyanLight)}
-.drac-table-striped.drac-table-green tr:nth-child(2n){background-color:var(--greenLight)}
-.drac-table-striped.drac-table-orange tr:nth-child(2n){background-color:var(--orangeLight)}
-.drac-table-striped.drac-table-pink tr:nth-child(2n){background-color:var(--pinkLight)}
-.drac-table-striped.drac-table-purple tr:nth-child(2n){background-color:var(--purpleLight)}
-.drac-table-striped.drac-table-red tr:nth-child(2n){background-color:var(--redLight)}
-.drac-table-striped.drac-table-yellow tr:nth-child(2n){background-color:var(--yellowLight)}

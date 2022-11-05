@@ -38,3 +38,4 @@ next-env.d.ts
 tmp/
 devices/static/
 resources/
+ondevicesite/static/third_party/dracula-ui/

@@ -1,6 +1,0 @@
-.drac-checkbox:not(.drac-switch),.drac-radio:not(.drac-switch){width:21px}
-.drac-checkbox:not(.drac-switch):after,.drac-radio:not(.drac-switch):after{opacity:var(--local-opacity,0)}
-.drac-checkbox:not(.drac-switch):checked,.drac-radio:not(.drac-switch):checked{--local-opacity:1}
-.drac-checkbox:not(.drac-switch){border-radius:7px}
-.drac-checkbox:not(.drac-switch):after{border:2px solid var(--black);border-left:0;border-top:0;height:9px;left:6px;top:2px;transform:rotate(var(--local-rotation,20deg));width:5px}
-.drac-checkbox:not(.drac-switch):checked{--local-rotation:43deg}
