@@ -11,7 +11,7 @@
     "lint": "eslint '.' --fix && stylelint '**/*.css' --fix"
   },
   "devDependencies": {
-    "@gauntface/dracula-ui": "^0.0.6",
+    "@gauntface/dracula-ui": "^0.0.8",
     "cssnano": "^5.1.14",
     "glob": "^8.0.3",
     "mkdirp": "^1.0.4",
