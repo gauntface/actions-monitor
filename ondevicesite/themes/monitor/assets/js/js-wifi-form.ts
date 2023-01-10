@@ -21,7 +21,7 @@ function run() {
 
     try {
       // TODO: Tell device to save WiFi details
-      const resp = await fetch(`/api/save-wifi`, options);
+      const resp = await fetch(`/api/wifi`, options);
       console.log(`Resp => `, resp);
     } catch (err) {
       console.error('Failed to save wifi details:', err);

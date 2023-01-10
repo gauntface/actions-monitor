@@ -5,6 +5,7 @@ from machine import Pin
 from utime import sleep
 from leds import leds
 from inventor import Inventor2040W, NUM_LEDS
+from apis.wifi import WifiAPI
 
 # Create a new Inventor2040W
 board = Inventor2040W()
@@ -32,21 +33,13 @@ app = tinyweb.webserver()
 # and turn the LED on/off using toggle()
 @app.route('/')
 async def index(request, response):
-    # Start HTTP response with content-type text/html
-    await response.start_html()
-    # Send actual HTML page
-    await response.send('<html><body><h1>Hello, world!</h1></body></html>\n')
-    
-    led.toggle()
+    await response.send_file('static/index.html')
 
-@app.route('/api/save-wifi')
-async def index(request, response):
-    # Start HTTP response with content-type text/html
-    await response.start_json()
-    # Send actual HTML page
-    await response.send('{}\n')
-    
-    led.toggle()
+@app.route('/wifi/setup')
+async def wifi_setup(request, response):
+    await response.send_file('static/wifi/setup/index.html')
+
+app.add_resource(WifiAPI, '/api/wifi')
 
 # Run the web server as the sole process
 app.run(host="0.0.0.0", port=80)
