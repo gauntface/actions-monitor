@@ -1,9 +1,6 @@
-import socket
 import network
 from third_party import tinyweb
 from machine import Pin
-from utime import sleep
-from leds import leds
 from inventor import Inventor2040W, NUM_LEDS
 from apis.wifi import WifiAPI
 
@@ -14,7 +11,7 @@ ssid = "GitHub Actions Monitor"
 password = "123456789"
 
 ap = network.WLAN(network.AP_IF)
-ap.config(essid=ssid, password=password) 
+ap.config(essid=ssid, password=password)
 ap.active(True)
 
 while ap.active == False:
